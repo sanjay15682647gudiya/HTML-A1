@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website with Image Slider and What's New</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Awesome Website</h1>
+    </header>
+
+    <main class="main-content">
+        <!-- Image Slider Section -->
+        <section class="image-slider-container">
+            <button class="scroll-btn left-btn" id="leftBtn">&#8249;</button>
+            <div class="image-slider" id="imageSlider">
+                <img src="https://via.placeholder.com/300x200?text=Image+1" alt="Image 1">
+                <img src="https://via.placeholder.com/300x200?text=Image+2" alt="Image 2">
+                <img src="https://via.placeholder.com/300x200?text=Image+3" alt="Image 3">
+                <img src="https://via.placeholder.com/300x200?text=Image+4" alt="Image 4">
+            </div>
+            <button class="scroll-btn right-btn" id="rightBtn">&#8250;</button>
+        </section>
+
+        <!-- What's New Section -->
+        <aside class="whats-new">
+            <h2>What's New</h2>
+            <div class="news-container" id="newsContainer">
+                <div class="news-item">New Feature: Image Slider is Live!</div>
+                <div class="news-item">Maintenance Scheduled for 12th Dec</div>
+                <div class="news-item">Version 2.0 Released!</div>
+                <div class="news-item">Don't Miss Our Year-End Sale!</div>
+            </div>
+
+            <form action="upload" method="post" enctype="multipart/form-data">
+                <label for="file">Upload Excel File:</label>
+                <input type="file" name="excelFile" id="excelFile" accept=".xls, .xlsx">
+                <button type="submit">Upload</button>
+            </form>
+            
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Website. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

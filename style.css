@@ -1,0 +1,132 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+/* Image Slider Styles */
+.image-slider-container {
+    position: relative;
+    width: 70%;
+    max-width: 800px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.image-slider {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-slider img {
+    width: 300px;
+    height: 200px;
+    margin: 0 5px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.left-btn {
+    left: 10px;
+}
+
+.right-btn {
+    right: 10px;
+}
+
+.scroll-btn:focus {
+    outline: none;
+}
+
+.scroll-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* What's New Section */
+.whats-new {
+    width: 25%;
+    max-width: 300px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.whats-new h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.news-container {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.news-item {
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #333;
+    animation: scroll-up 8s linear infinite;
+}
+
+@keyframes scroll-up {
+    0% {
+        transform: translateY(100%);
+    }
+    25% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-100%);
+    }
+    75% {
+        transform: translateY(-200%);
+    }
+    100% {
+        transform: translateY(-300%);
+    }
+}
